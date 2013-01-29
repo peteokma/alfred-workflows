@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>7F5C0957-85F8-483B-9384-67FAE750AF65</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>787A6299-58C5-496B-B70A-A33082AE2989</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Peter Okma</string>
+	<key>description</key>
+	<string>Search and focus, currently open chrome tabs</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Chrome Tabs</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>tabs</string>
+				<key>script</key>
+				<string>python get_tabs.py {query}</string>
+				<key>subtext</key>
+				<string>Search Currently Opened Chrome Tabs</string>
+				<key>title</key>
+				<string>Chrome Tabs</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7F5C0957-85F8-483B-9384-67FAE750AF65</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>python focus_tab.py {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.script</string>
+			<key>uid</key>
+			<string>787A6299-58C5-496B-B70A-A33082AE2989</string>
+		</dict>
+	</array>
+	<key>uidata</key>
+	<dict>
+		<key>787A6299-58C5-496B-B70A-A33082AE2989</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>7F5C0957-85F8-483B-9384-67FAE750AF65</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
